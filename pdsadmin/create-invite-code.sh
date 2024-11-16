@@ -3,9 +3,6 @@ set -o errexit
 set -o nounset
 set -o pipefail
 
-# PDS_ENV_FILE=${PDS_ENV_FILE:-"/pds/pds.env"}
-# source "${PDS_ENV_FILE}"
-
 curl \
   --fail \
   --silent \

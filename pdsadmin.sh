@@ -3,8 +3,6 @@ set -o errexit
 set -o nounset
 set -o pipefail
 
-# PDSADMIN_BASE_URL="https://raw.githubusercontent.com/bluesky-social/pds/main/pdsadmin"
-
 # Command to run.
 COMMAND="${1:-help}"
 shift || true
@@ -15,18 +13,5 @@ if [[ "${EUID}" -ne 0 ]]; then
   exit 1
 fi
 
-# Download the script, if it exists.
-SCRIPT_FILE="./pdsadmin/${COMMAND}.sh"
-# SCRIPT_FILE="$(mktemp /tmp/pdsadmin.${COMMAND}.XXXXXX)"
-
+SCRIPT_FILE="/app/pdsadmin/${COMMAND}.sh"
 ${SCRIPT_FILE} "$@"
-
-# if ! curl --fail --silent --show-error --location --output "${SCRIPT_FILE}" "${SCRIPT_URL}"; then
-#   echo "ERROR: ${COMMAND} not found"
-#   exit 2
-# fi
-
-# chmod +x "${SCRIPT_FILE}"
-# if "${SCRIPT_FILE}" "$@"; then
-#   rm --force "${SCRIPT_FILE}"
-# fi
