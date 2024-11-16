@@ -2,7 +2,7 @@
 FROM ghcr.io/bluesky-social/pds:0.4
 
 # All the pds stuff needs bash
-RUN apk update && apk add --no-cache bash
+RUN apk update && apk add --no-cache bash curl
 
 # Copy the PDS service files
 WORKDIR /app
