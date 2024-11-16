@@ -2,7 +2,7 @@
 FROM ghcr.io/bluesky-social/pds:0.4
 
 # All the pds stuff needs bash
-RUN apt-get update && apt-get install -y bash
+RUN apk update && apk add --no-cache bash
 
 # Copy the PDS service files
 WORKDIR /app
