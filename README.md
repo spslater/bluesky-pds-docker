@@ -53,7 +53,7 @@ What's up with the `pdsadmin` command "variant" included in this repository, you
 
 The [official implementation](https://github.com/bluesky-social/pds/blob/main/pdsadmin.sh) makes two assumptions that don't apply:
 
-1. That there's a `/pds/pds.env` file that contains environment variables. With a Dokker container, these should be passed in as environment variables from the outside.
+1. That there's a `/pds/pds.env` file that contains environment variables. With a Docker container, these should be passed in as environment variables from the outside.
 
 2. That it makes sense to download the latest sub-command implementations from the internet every time the `pdsadmin` command is run. Frankly, I don't really know what's going on here, but I don't want it!
 
