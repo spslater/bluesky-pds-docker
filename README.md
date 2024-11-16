@@ -4,7 +4,7 @@ The [official Bluesky documentation on self-hosting a PDS](https://atproto.com/g
 
 In addition, the [installation instructions](https://github.com/bluesky-social/pds/tree/main?tab=readme-ov-file#self-hosting-pds) make several assumptions that don't quite match my setup.
 
-This repository contains a `Dockerfile` that you can use to get a Bluesky PDS up and running in a single Docker container. That container also includes the `pdsadmin` command; once the container is running you can log in to create a Bluesky account.
+This repository contains a `Dockerfile` that you can use to get a Bluesky PDS up and running. That container includes the `pdsadmin` command; once it's up and running you can log in to create a Bluesky account.
 
 ### Where can I use this?
 
