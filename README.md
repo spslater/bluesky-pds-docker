@@ -6,6 +6,8 @@ In addition, the [installation instructions](https://github.com/bluesky-social/p
 
 This repository contains a `Dockerfile` that you can use to get a Bluesky PDS up and running in a single Docker container. That container also includes the `pdsadmin` command; once the container is running you can log in to create a Bluesky account.
 
+### Where can I use this?
+
 I happen to use [Dokku](https://dokku.com), a "personal" Heroku clone, to host a variety of low-traffic services on a [tiny cloud server](https://www.hetzner.com). 
 
 You can [read my notes on how to self-host a Bluesky PDS with Dokku](https://davepeck.org/notes/self-hosting-a-bluesky-pds-with-dokku/).
