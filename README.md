@@ -49,7 +49,7 @@ PDS_REPORT_SERVICE_URL=https://mod.bsky.app
 
 ### Notes
 
-What's up with the `pdsadmin` command "variant", you ask?
+What's up with the `pdsadmin` command "variant" included in this repository, you ask?
 
 The [official implementation](https://github.com/bluesky-social/pds/blob/main/pdsadmin.sh) makes two assumptions that don't apply:
 
