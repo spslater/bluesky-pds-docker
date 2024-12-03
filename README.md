@@ -10,7 +10,7 @@ This repository contains a `Dockerfile` that you can use to get a Bluesky PDS up
 
 I happen to use [Dokku](https://dokku.com), a "personal" Heroku clone, to host a variety of low-traffic services on a [tiny cloud server](https://www.hetzner.com). 
 
-You can [read my notes on how to self-host a Bluesky PDS with Dokku](https://davepeck.org/notes/self-hosting-a-bluesky-pds-with-dokku/).
+You can [read my notes on how to self-host a Bluesky PDS with Dokku](https://davepeck.org/notes/bluesky/self-hosting-a-bluesky-pds-with-dokku/).
 
 In addition to Dokku, this Docker file could also be used to run on Heroku, GCP Cloud Run, AWS Fargate, etc.
 
