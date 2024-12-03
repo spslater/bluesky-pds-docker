@@ -29,7 +29,7 @@ To get Bluesky to validate email, you'll want to configure the following two env
 - `PDS_EMAIL_SMTP_URL` - the URL of your SMTP server. For instance, `smtp://[user]:[password]@[smtp-server]:[port]`
 - `PDS_EMAIL_FROM_ADDRESS` - the email address from which Bluesky will send email. For instance, `admin@mydomain.com`
 
-If you're using Dokku [with my instructions](https://davepeck.org/notes/self-hosting-a-bluesky-pds-with-dokku/), you can configure blobstore as follows:
+If you're using Dokku [with my instructions](https://davepeck.org/notes/bluesky/self-hosting-a-bluesky-pds-with-dokku/), you can configure blobstore as follows:
 
 - `PDS_BLOBSTORE_DISK_LOCATION` - set to `/pds/blocks`
 
@@ -50,7 +50,7 @@ PDS_REPORT_SERVICE_DID=did:plc:ar7c4by46qjdydhdevvrndac
 PDS_REPORT_SERVICE_URL=https://mod.bsky.app
 ```
 
-(TODO: convince myself that `PDS_DATA_DIRECTORY` only contains ephemeral data, and not configuration or state that needs to be persisted across container restarts. My [Dokku installation instructions](https://davepeck.org/notes/self-hosting-a-bluesky-pds-with-dokku/) make the conservative assumption that we _do_ want to persist this data across restarts, by mounting a volume. But if you're using S3 for the blobstore, you might not want to do this.)
+(TODO: convince myself that `PDS_DATA_DIRECTORY` only contains ephemeral data, and not configuration or state that needs to be persisted across container restarts. My [Dokku installation instructions](https://davepeck.org/notes/bluesky/self-hosting-a-bluesky-pds-with-dokku/) make the conservative assumption that we _do_ want to persist this data across restarts, by mounting a volume. But if you're using S3 for the blobstore, you might not want to do this.)
 
 ### Notes
 
