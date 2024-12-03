@@ -24,6 +24,11 @@ You'll need to configure the following environment variables:
 - `PDS_JWT_SECRET` - run `openssl rand --hex 16` locally to generate a random secret.
 - `PDS_PLC_ROTATION_KEY_K256_PRIVATE_KEY_HEX` - run `openssl ecparam --name secp256k1 --genkey --noout --outform DER | tail --bytes=+8 | head --bytes=32 | xxd --plain --cols 32` locally to generate this.
 
+To get Bluesky to validate email, you'll want to configure the following two environment variables:
+
+- `PDS_EMAIL_SMTP_URL` - the URL of your SMTP server. For instance, `smtp://[user]:[password]@[smtp-server]:[port]`
+- `PDS_EMAIL_FROM_ADDRESS` - the email address from which Bluesky will send email. For instance, `admin@mydomain.com`
+
 If you're using Dokku [with my instructions](https://davepeck.org/notes/self-hosting-a-bluesky-pds-with-dokku/), you can configure blobstore as follows:
 
 - `PDS_BLOBSTORE_DISK_LOCATION` - set to `/pds/blocks`
